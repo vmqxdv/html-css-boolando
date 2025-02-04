@@ -18,7 +18,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 3em;
-  padding: 0 15%;
+  padding: 0 10%;
 }
 
 header div {
@@ -47,19 +47,105 @@ header div:last-child {
 }
 /* \HEADER */
 
+
 /* MAIN */
 main {
   display: flex;
-  align-content: flex-start;
-  padding: 0 15%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 2% 10%;
 }
 
+
+/* CARD */
 .card {
-  border: 2px red solid;
-  gap: 2%
+  position: relative;
+  width: 31.5%;
+  margin-bottom: 3.5%;
 }
 
+/* PRODOTTO */
 .card > img {
   width: 100%;
 }
+
+.card > img:first-of-type {
+  z-index: 0;
+  position: absolute;
+}
+
+.card > img:last-of-type {
+  z-index: -1;
+}
+
+.card > img:first-of-type:hover {
+  opacity: 0;
+}
+/* \PRODOTTO */
+
+/* PREFERITO */
+.preferito {
+  background-color: white;
+  padding: 0.2em 0.3em;
+  position: absolute;
+  right: 0;
+  top: 0.3em;
+  cursor: pointer;
+}
+
+.preferito.pieno {
+  color: red;
+  opacity: 0;
+}
+
+.preferito.pieno:hover {
+  opacity: 100;
+}
+/* \PREFERITO */
+
+/* TAGS */
+.tags {
+  display: flex;
+  position: absolute;
+  gap: 0.2em;
+  color: white;
+  bottom: 4em;
+}
+
+.tags > .sconto, .sostenibile {
+  font-size: 0.5em;
+  padding: 0.3em 0.7em;
+}
+
+.tags > .sconto {
+  background-color: red;
+}
+
+.sostenibile {
+  background-color: green;
+}
+/* \TAGS */
+
+/* DETTAGLI */
+.marca {
+  font-size: 0.6em;
+  color: gray;
+}
+
+.nome {
+  font-size: 0.6em;
+  text-transform: uppercase;
+}
+
+.prezzo {
+  font-size: 0.5em;
+}
+
+.prezzo :not(s) {
+  color: red;
+}
+/* \DETTAGLI */
+
+/* \CARD */
+
 /* \MAIN */

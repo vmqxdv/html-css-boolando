@@ -1,3 +1,4 @@
+/* GENERALE */
 * {
   margin: 0;
   font-family: sans-serif;
@@ -6,9 +7,11 @@
 a {
   text-decoration: none;
 }
+/* \GENERALE */
 
 
 
+/* HEADER */
 header {
   background-color: #ff6900;
   display: flex;
@@ -42,3 +45,21 @@ header div:last-child {
 .logo > img {
   width: 4.5em;
 }
+/* \HEADER */
+
+/* MAIN */
+main {
+  display: flex;
+  align-content: flex-start;
+  padding: 0 15%;
+}
+
+.card {
+  border: 2px red solid;
+  gap: 2%
+}
+
+.card > img {
+  width: 100%;
+}
+/* \MAIN */

@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+}
+
+
+
+header {
+  background-color: #ff6900;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 3em;
+}
+
+header div {
+  border: 2px red solid;
+  height: 100%
+}
+
+header div:not(.logo) {
+  /* width: 10em; */
+}
+
+header div ul {
+  display: flex;
+  list-style-type: none;
+  padding: 0;
+}
+
+.utilities ul li {
+  text-align: right;
+}
+
+.logo > img {
+  width: 4em;
+}

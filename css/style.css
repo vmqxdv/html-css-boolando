@@ -1,5 +1,10 @@
 * {
   margin: 0;
+  font-family: sans-serif;
+}
+
+a {
+  text-decoration: none;
 }
 
 
@@ -10,27 +15,30 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 3em;
+  padding: 0 15%;
 }
 
 header div {
-  border: 2px red solid;
+  display: flex;
+  align-items: center;
   height: 100%
 }
 
+header a {
+  color: white;
+  font-size: 0.7em;
+}
+
 header div:not(.logo) {
-  /* width: 10em; */
+  font-weight: bold;
+  width: 35%;
+  gap: 0.4em;
 }
 
-header div ul {
-  display: flex;
-  list-style-type: none;
-  padding: 0;
-}
-
-.utilities ul li {
-  text-align: right;
+header div:last-child {
+  flex-direction: row-reverse;
 }
 
 .logo > img {
-  width: 4em;
+  width: 4.5em;
 }
